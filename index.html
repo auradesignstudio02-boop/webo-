@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>المطور الرقمي | تصميم وبرمجة المواقع الإلكترونية الاحترافية</title>
+  <meta name="description" content="استوديو متخصص في تصميم وبرمجة المواقع الإلكترونية للشركات، صفحات الهبوط، والبورتفوليو بأعلى معايير السرعة والأداء." />
+  
+  <!-- Google Fonts: Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Top Announcement Banner -->
+  <div class="top-banner">
+    ✨ صمم موقعك الإلكتروني الاحترافي اليوم: احصل على <strong>استضافة وسرعة فائقة + تهيئة SEO</strong> مع أي باقة تختاره!
+    <a href="#services-section">استعرض الباقات</a>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <div class="logo-area" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+        <div class="logo-icon">
+          <i data-lucide="globe" style="width: 24px; height: 24px;"></i>
+        </div>
+        <div class="logo-text">
+          <h2>المطور الرقمي</h2>
+          <span>Web Development Studio</span>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#services-section">خدمات المواقع</a>
+        <a href="#guide-section" style="display: flex; align-items: center; gap: 0.4rem;">
+          <i data-lucide="book-open" style="width: 16px; height: 16px; color: #818cf8;"></i> دليل المواقع الاحترافية
+        </a>
+        <a href="#calculator">حاسبة النمو</a>
+        <a href="#contact">تواصل معنا</a>
+      </nav>
+
+      <div style="display: none;" class="desktop-cta-wrap">
+        <button onclick="openModal()" class="btn-primary">
+          <i data-lucide="sparkles" style="width: 16px; height: 16px; color: #fde047;"></i>
+          اطلب موقعك الآن
+        </button>
+      </div>
+
+      <button onclick="toggleMobileMenu()" class="mobile-menu-btn" style="background: none; border: none; color: white; cursor: pointer;">
+        <i data-lucide="menu" style="width: 24px; height: 24px;"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="mobile-menu">
+      <a href="#services-section" onclick="toggleMobileMenu()">خدمات المواقع</a>
+      <a href="#guide-section" onclick="toggleMobileMenu()">دليل المعلومات الصحيحة</a>
+      <a href="#calculator" onclick="toggleMobileMenu()">حاسبة النمو والعملاء</a>
+      <a href="#contact" onclick="toggleMobileMenu()">تواصل معنا</a>
+      <button onclick="toggleMobileMenu(); openModal();" class="btn-primary" style="width: 100%; justify-content: center;">
+        اطلب موقعك الآن
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <i data-lucide="code" style="width: 16px; height: 16px; color: #fde047;"></i>
+          <span>تصميم وبرمجة المواقع الإلكترونية الاحترافية للشركات والأفراد</span>
+        </div>
+
+        <h1>
+          ابنِ واجهتك الرقمية بقوة واحترافية مع <span>موقع إلكتروني مخصص</span>
+        </h1>
+
+        <p>
+          نحن نصمم ونبرمج مواقع إلكترونية تعريفية، صفحات هبوط تسويقية، وبورتفوليو إبداعي بأعلى معايير السرعة والأمان والأداء المتميز لتترك انطباعاً لا يُنسى لدى عملائك.
+        </p>
+
+        <div class="hero-btns">
+          <a href="#services-section" class="btn-primary" style="justify-content: center;">
+            <i data-lucide="globe" style="width: 18px; height: 18px;"></i>
+            استعرض خدمات تصميم المواقع
+          </a>
+          <a href="#guide-section" class="btn-secondary" style="justify-content: center;">
+            <i data-lucide="book-open" style="width: 18px; height: 18px; color: #818cf8;"></i>
+            دليل هندسة المواقع
+          </a>
+        </div>
+
+        <div class="stats-bar">
+          <div>
+            <div class="stat-number">+300</div>
+            <div class="stat-label">موقع إلكتروني أُنجز</div>
+          </div>
+          <div>
+            <div class="stat-number">&lt; 1.0 ث</div>
+            <div class="stat-label">سرعة تحميل فائقة</div>
+          </div>
+          <div>
+            <div class="stat-number">100%</div>
+            <div class="stat-label">تصميم مخصص وخاص بك</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="mockup-box">
+          <div style="position: absolute; top: 1rem; left: 1rem; background: #4f46e5; color: white; font-size: 11px; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: 9999px;">
+            تطوير مواقع الويب الحديثة
+          </div>
+          <span style="font-size: 0.75rem; color: #a5b4fc; text-transform: uppercase; font-weight: 600; display: block; margin-bottom: 0.5rem;">هندسة رقمية متطورة</span>
+          <h3 style="font-size: 1.35rem; font-weight: 900; color: white; margin-bottom: 1rem; line-height: 1.4;">
+            "اجعل شركتك تظهر بأفضل صورة أمام العالم الرقمي"
+          </h3>
+          <p style="color: #cbd5e1; font-size: 0.85rem; line-height: 1.7; margin-bottom: 1.5rem;">
+            نحن متخصصون حصرياً في بناء المواقع الإلكترونية التعريفية، الشركات، والصفحات الاحترافية. نبتكر لك هوية ويب مميزة تعكس احترافية عملك.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.5rem; font-size: 0.85rem; color: #e2e8f0;">
+            <div style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check-circle-2" style="width: 16px; height: 16px; color: #34d399;"></i> كود برمجي نظيف وخالٍ من التعقيد</div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check-circle-2" style="width: 16px; height: 16px; color: #34d399;"></i> متوافق تماماً مع محركات البحث SEO</div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check-circle-2" style="width: 16px; height: 16px; color: #34d399;"></i> دعم فني وتحديثات مستمرة</div>
+          </div>
+          <button onclick="openModal()" class="btn-primary" style="width: 100%; justify-content: center;">
+            <i data-lucide="sparkles" style="width: 16px; height: 16px;"></i>
+            احجز استشارة برمجية مجانية
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Website Services Section -->
+  <section id="services-section" class="section" style="background: rgba(15, 23, 42, 0.4); border-top: 1px solid #1e293b; border-bottom: 1px solid #1e293b;">
+    <div class="section-header">
+      <span class="section-badge">خدمات تصميم المواقع الإلكترونية</span>
+      <h2 class="section-title">اختر نوع الموقع الذي يمثّل نشاطك وهويتك</h2>
+      <p class="section-desc">نقدم حلولاً برمجية وتصميمية متكاملة بأسعار تنافسية بالدينار الجزائري.</p>
+    </div>
+
+    <div class="grid-2">
+      
+      <!-- Service 1 -->
+      <div class="card">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+            <span style="background: #1e1b4b; color: #c7d2fe; font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: 9999px; border: 1px solid rgba(99,102,241,0.3);">سريع وفعال ⚡</span>
+            <div style="text-align: left;">
+              <span style="font-size: 1.5rem; font-weight: 900; color: #34d399;">18,000 د.ج</span>
+              <span style="font-size: 0.75rem; color: #64748b; text-decoration: line-through; display: block;">25,000 د.ج</span>
+            </div>
+          </div>
+          <h3 style="font-size: 1.35rem; font-weight: 800; color: white; margin-bottom: 0.75rem;">صفحة هبوط تسويقية (Landing Page)</h3>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.7; margin-bottom: 1.5rem;">صفحة واحدة مصممة خصيصاً لإطلاق حملة إعلانية ناجحة، تسويق منتج أو خدمة جديدة، وتحقيق أعلى معدل تحويل.</p>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem; font-size: 0.9rem; color: #cbd5e1;">
+            <div style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: #818cf8;"></i> تصميم يركز على إقناع الزوار</div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: #818cf8;"></i> سرعة خرافية لفتح الإعلانات</div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: #818cf8;"></i> ربط مع بكسل الإعلانات وواتساب</div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: #818cf8;"></i> نموذج تسجيل بيانات فوري</div>
+          </div>
+        </div>
+        <button onclick="selectServiceAndOpen('صفحة هبوط تسويقية')" class="btn-primary" style="width: 100%; justify-content: center;">
+          <i data-lucide="globe" style="width: 16px; height: 16px;"></i> اطلب تصميم هذا الموقع
+        </button>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="card">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+            <span style="background: #1e1b4b; color: #c7d2fe; font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: 9999px; border: 1px solid rgba(99,102,241,0.3);">للمستقلين والمبدعين 🎨</span>
+            <div style="text-align: left;">
+              <span style="font-size: 1.5rem; font-weight: 900; color: #34d399;">22,000 د.ج</span>
+              <span style="font-size: 0.75rem; color: #64748b; text-decoration: line-through; display: block;">30,000 د.ج</span>
+            </div>
+          </div>
+          <h3 style="font-size: 1.35rem; font-weight: 800; color: white; margin-bottom: 0.75rem;">موقع بورتفوليو / شخصي (Portfolio)</h3>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.7; margin-bottom: 1.5rem;">اعرض أعمالك، خدماتك، وسيرتك الذاتية بأناقة فائقة تجذب العملاء والشركات للتعاقد معك.</p>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem; font-size: 0.9rem; color: #cbd5e1;">
+            <div style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: #818cf8;"></i> معرض أعمال بتصميم إبداعي</div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: #818cf8;"></i> سيرة ذاتية تفاعلية</div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: #818cf8;"></i> صفحة حجز استشارات أو خدمات</div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: #818cf8;"></i> مدونة شخصية اختيارية</div>
+          </div>
+        </div>
+        <button onclick="selectServiceAndOpen('موقع بورتفوليو / شخصي')" class="btn-primary" style="width: 100%; justify-content: center;">
+          <i data-lucide="globe" style="width: 16px; height: 16px;"></i> اطلب تصميم هذا الموقع
+        </button>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="card">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+            <span style="background: #1e1b4b; color: #c7d2fe; font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: 9999px; border: 1px solid rgba(99,102,241,0.3);">الأكثر طلباً ⭐</span>
+            <div style="text-align: left;">
+              <span style="font-size: 1.5rem; font-weight: 900; color: #34d399;">28,000 د.ج</span>
+              <span style="font-size: 0.75rem; color: #64748b; text-decoration: line-through; display: block;">40,000 د.ج</span>
+            </div>
+          </div>
+          <h3 style="font-size: 1.35rem; font-weight: 800; color: white; margin-bottom: 0.75rem;">موقع الشركات والأعمال (Corporate Website)</h3>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.7; margin-bottom: 1.5rem;">موقع احترافي متكامل للتعريف بشركتك، خدماتك، فريق العمل، ونموذج تواصل متقدم لزيادة العملاء المحتملين.</p>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem; font-size: 0.9rem; color: #cbd5e1;">
+            <div style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: #818cf8;"></i> تصميم مخصص يتناسب مع هويتك</div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: #818cf8;"></i> سرعة تحميل فائقة وتوافق تام مع الجوال</div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: #818cf8;"></i> لوحة تحكم سهلة لإدارة المحتوى</div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: #818cf8;"></i> تهيئة متقدمة لمحركات البحث SEO</div>
+          </div>
+        </div>
+        <button onclick="selectServiceAndOpen('موقع الشركات والأعمال')" class="btn-primary" style="width: 100%; justify-content: center;">
+          <i data-lucide="globe" style="width: 16px; height: 16px;"></i> اطلب تصميم هذا الموقع
+        </button>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="card">
+        <div>
+          <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+            <span style="background: #1e1b4b; color: #c7d2fe; font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: 9999px; border: 1px solid rgba(99,102,241,0.3);">حلول متقدمة 💻</span>
+            <div style="text-align: left;">
+              <span style="font-size: 1.5rem; font-weight: 900; color: #34d399;">35,000 د.ج</span>
+              <span style="font-size: 0.75rem; color: #64748b; text-decoration: line-through; display: block;">50,000 د.ج</span>
+            </div>
+          </div>
+          <h3 style="font-size: 1.35rem; font-weight: 800; color: white; margin-bottom: 0.75rem;">بوابة الخدمات والحلول المخصصة (Web App)</h3>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.7; margin-bottom: 1.5rem;">تطوير موقع ويب تفاعلي مع لوحة تحكم خاصة، مستخدمين، وحلول برمجية مخصصة حسب فكرة مشروعك.</p>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem; font-size: 0.9rem; color: #cbd5e1;">
+            <div style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: #818cf8;"></i> برمجة مخصصة بالكامل</div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: #818cf8;"></i> نظام صلاحيات مستخدمين (تسجيل دخول)</div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: #818cf8;"></i> ربط مع واجهات برمجية APIs</div>
+            <div style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="check-circle-2" style="width: 18px; height: 18px; color: #818cf8;"></i> دعم فني واستضافة متقدمة</div>
+          </div>
+        </div>
+        <button onclick="selectServiceAndOpen('بوابة الخدمات والحلول المخصصة')" class="btn-primary" style="width: 100%; justify-content: center;">
+          <i data-lucide="globe" style="width: 16px; height: 16px;"></i> اطلب تصميم هذا الموقع
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Guide Section -->
+  <section id="guide-section" class="section">
+    <div class="section-header">
+      <span class="section-badge">دليل هندسة المواقع والمعلومات</span>
+      <h2 class="section-title">لماذا يمثل الموقع الإلكتروني الاحترافي ركيزة نجاحك؟</h2>
+      <p class="section-desc">معلومات صحيحة ورؤى استراتيجية حول دور المواقع في بناء الثقة وجذب العملاء للشركات.</p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card" style="background: #090d16;">
+        <div>
+          <div style="width: 48px; height: 48px; border-radius: 1rem; background: rgba(99,102,241,0.1); border: 1px solid rgba(99,102,241,0.3); display: flex; align-items: center; justify-content: center; color: #818cf8; font-weight: 800; font-size: 1.1rem; margin-bottom: 1.5rem;">01</div>
+          <h3 style="font-size: 1.25rem; font-weight: 800; color: white; margin-bottom: 0.75rem;">الانطباع الأول والمصداقية</h3>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.7; margin-bottom: 1.5rem;">75% من العملاء يقيمون مدى موثوقية الشركة بناءً على جودة واحترافية موقعها الإلكتروني. الموقع الرديء يعكس انطباعاً سلبياً، بينما الموقع العصري يبني الثقة الفورية.</p>
+        </div>
+        <div style="padding-top: 1rem; border-top: 1px solid #1e293b; font-size: 0.8rem; color: #818cf8; font-weight: 600; display: flex; align-items: center; gap: 0.4rem;">
+          <i data-lucide="check-square" style="width: 16px; height: 16px;"></i> معيار أساسي في التصميم
+        </div>
+      </div>
+
+      <div class="card" style="background: #090d16;">
+        <div>
+          <div style="width: 48px; height: 48px; border-radius: 1rem; background: rgba(168,85,247,0.1); border: 1px solid rgba(168,85,247,0.3); display: flex; align-items: center; justify-content: center; color: #c084fc; font-weight: 800; font-size: 1.1rem; margin-bottom: 1.5rem;">02</div>
+          <h3 style="font-size: 1.25rem; font-weight: 800; color: white; margin-bottom: 0.75rem;">الظهور في محركات البحث (SEO)</h3>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.7; margin-bottom: 1.5rem;">الموقع الإلكتروني المهيكل برمجياً بشكل صحيح يتيح لك الظهور في نتائج جوجل الأولى مجاناً، مستقطباً عملاء يبحثون عن خدماتك بشكل دائم دون الحاجة لإعلانات مستمرة.</p>
+        </div>
+        <div style="padding-top: 1rem; border-top: 1px solid #1e293b; font-size: 0.8rem; color: #c084fc; font-weight: 600; display: flex; align-items: center; gap: 0.4rem;">
+          <i data-lucide="check-square" style="width: 16px; height: 16px;"></i> مهيأ بالكامل لجوجل
+        </div>
+      </div>
+
+      <div class="card" style="background: #090d16;">
+        <div>
+          <div style="width: 48px; height: 48px; border-radius: 1rem; background: rgba(236,72,153,0.1); border: 1px solid rgba(236,72,153,0.3); display: flex; align-items: center; justify-content: center; color: #f472b6; font-weight: 800; font-size: 1.1rem; margin-bottom: 1.5rem;">03</div>
+          <h3 style="font-size: 1.25rem; font-weight: 800; color: white; margin-bottom: 0.75rem;">استقبال العملاء على مدار الساعة</h3>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.7; margin-bottom: 1.5rem;">موقعك هو موظفك الأبدي الذي يعمل 24 ساعة يومياً، يعرض خدماتك، ويستقبل طلبات واستفسارات العملاء المحتملين ونماذج التواصل بكل سهولة واحترافية.</p>
+        </div>
+        <div style="padding-top: 1rem; border-top: 1px solid #1e293b; font-size: 0.8rem; color: #f472b6; font-weight: 600; display: flex; align-items: center; gap: 0.4rem;">
+          <i data-lucide="check-square" style="width: 16px; height: 16px;"></i> متاح 24/7 بدون توقف
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROI Calculator Section -->
+  <section id="calculator" class="section" style="background: rgba(15, 23, 42, 0.4); border-top: 1px solid #1e293b; border-bottom: 1px solid #1e293b;">
+    <div class="section-header">
+      <span class="section-badge">حاسبة العائد والعملاء المحتملين</span>
+      <h2 class="section-title">احسب حجم نمو أعمالك مع موقعك الاحترافي الجديد</h2>
+      <p class="section-desc">توقع عدد العملاء والإيرادات الشهرية بناءً على زوار موقعك ومعدل التحويل.</p>
+    </div>
+
+    <div class="calc-container">
+      <div class="calc-inputs">
+        <div class="range-group">
+          <div class="range-header">
+            <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="users" style="width: 16px; height: 16px; color: #818cf8;"></i> الزوار المتوقعون للموقع شهرياً</span>
+            <span id="visitors-val" class="range-badge">10,000 زائر</span>
+          </div>
+          <input type="range" id="visitors-slider" min="1000" max="50000" step="1000" value="10000" oninput="calculateROI()" />
+        </div>
+
+        <div class="range-group">
+          <div class="range-header">
+            <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="dollar-sign" style="width: 16px; height: 16px; color: #34d399;"></i> متوسط قيمة التعاقد أو الصفقة الواحدة</span>
+            <span id="deal-val" class="range-badge">25,000 د.ج</span>
+          </div>
+          <input type="range" id="deal-slider" min="5000" max="150000" step="5000" value="25000" oninput="calculateROI()" />
+        </div>
+
+        <div class="range-group">
+          <div class="range-header">
+            <span style="display: flex; align-items: center; gap: 0.5rem;"><i data-lucide="trending-up" style="width: 16px; height: 16px; color: #c084fc;"></i> معدل تحويل الزوار لعملاء (Conversion Rate)</span>
+            <span id="conversion-val" class="range-badge">2.0%</span>
+          </div>
+          <input type="range" id="conversion-slider" min="0.5" max="5.0" step="0.1" value="2.0" oninput="calculateROI()" />
+        </div>
+      </div>
+
+      <div class="calc-results">
+        <div class="results-box">
+          <span style="font-size: 0.75rem; font-weight: 700; color: #c7d2fe; text-transform: uppercase; background: rgba(49,46,129,0.5); padding: 0.25rem 0.75rem; border-radius: 9999px;">نتائج النمو والعملاء</span>
+          
+          <div style="margin: 1.5rem 0;">
+            <span style="font-size: 0.8rem; color: #94a3b8; display: block; margin-bottom: 0.25rem;">العملاء المحتملون شهرياً (Leads)</span>
+            <span id="res-leads" style="font-size: 1.75rem; font-weight: 900; color: white; font-family: monospace;">200 عميل</span>
+          </div>
+
+          <div style="margin: 1.5rem 0; padding: 1.5rem 0; border-top: 1px solid rgba(99,102,241,0.3); border-bottom: 1px solid rgba(99,102,241,0.3);">
+            <span style="font-size: 0.8rem; color: #94a3b8; display: block; margin-bottom: 0.25rem;">الإيرادات الشهرية المحتملة</span>
+            <span id="res-monthly" style="font-size: 2rem; font-weight: 900; color: #34d399; font-family: monospace;">5,000,000 د.ج</span>
+          </div>
+
+          <div style="margin-bottom: 1.5rem;">
+            <span style="font-size: 0.8rem; color: #94a3b8; display: block; margin-bottom: 0.25rem;">الإيرادات السنوية (متوقعة)</span>
+            <span id="res-annual" style="font-size: 1.5rem; font-weight: 900; color: #c7d2fe; font-family: monospace;">60,000,000 د.ج</span>
+          </div>
+
+          <button onclick="openModal()" class="btn-primary" style="width: 100%; justify-content: center;">
+            اطلب موقعك الإلكتروني لزيادة أرباحك 🚀
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="form-box">
+      <div class="section-header" style="margin-bottom: 2.5rem;">
+        <span class="section-badge">تواصل مباشر</span>
+        <h2 class="section-title" style="font-size: 2rem;">ابدأ تصميم موقعك الإلكتروني اليوم</h2>
+        <p class="section-desc" style="font-size: 0.95rem;">املأ النموذج أدناه ليتم تحويلك مباشرة عبر واتساب لمناقشة متطلبات مشروعك فورا.</p>
+      </div>
+
+      <form id="contact-form" onsubmit="handleFormSubmit(event)">
+        <div class="form-grid">
+          <div class="form-group">
+            <label>الاسم الكريم *</label>
+            <input type="text" id="cf-name" required placeholder="محمد أحمد" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label>البريد الإلكتروني *</label>
+            <input type="email" id="cf-email" required placeholder="name@example.com" class="form-control" />
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label>رقم الجوال *</label>
+            <input type="tel" id="cf-phone" required placeholder="+213 600 000 000" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label>نوع الخدمة / الموقع المطلوبة</label>
+            <select id="cf-service" class="form-control">
+              <option value="صفحة هبوط تسويقية">صفحة هبوط تسويقية (18,000 د.ج)</option>
+              <option value="موقع بورتفوليو / شخصي">موقع بورتفوليو / شخصي (22,000 د.ج)</option>
+              <option value="موقع الشركات والأعمال">موقع الشركات والأعمال (28,000 د.ج)</option>
+              <option value="بوابة الخدمات والحلول المخصصة">بوابة الخدمات والحلول المخصصة (35,000 د.ج)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>تفاصيل فكرة موقعك أو متطلباتك</label>
+          <textarea id="cf-notes" rows="4" placeholder="اكتب نبذة مختصرة عن نشاط شركتك أو أفكارك للموقع..." class="form-control"></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; background: linear-gradient(135deg, #059669, #0d9488); font-size: 1.05rem; padding: 1rem;">
+          <i data-lucide="send" style="width: 20px; height: 20px;"></i>
+          إرسال الطلب عبر واتساب مباشرة 💬
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div>
+        <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+          <div style="width: 36px; height: 36px; border-radius: 0.75rem; background: linear-gradient(135deg, #4f46e5, #db2777); display: flex; align-items: center; justify-content: center; color: white;">
+            <i data-lucide="globe" style="width: 20px; height: 20px;"></i>
+          </div>
+          <span style="font-size: 1.15rem; font-weight: 900; color: white;">المطور الرقمي</span>
+        </div>
+        <p style="font-size: 0.85rem; line-height: 1.7;">استوديو متخصص في تصميم وبرمجة المواقع الإلكترونية الاحترافية، الشركات، وصفحات الهبوط بأعلى معايير الجودة.</p>
+      </div>
+
+      <div>
+        <h4 style="font-weight: 800; color: white; margin-bottom: 1rem; font-size: 0.95rem;">روابط سريعة</h4>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.85rem;">
+          <li><a href="#services-section" style="color: #94a3b8;">خدمات المواقع</a></li>
+          <li><a href="#guide-section" style="color: #94a3b8;">دليل المعلومات</a></li>
+          <li><a href="#calculator" style="color: #94a3b8;">حاسبة النمو</a></li>
+          <li><a href="#contact" style="color: #94a3b8;">تواصل معنا</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 style="font-weight: 800; color: white; margin-bottom: 1rem; font-size: 0.95rem;">خدمات الويب</h4>
+        <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.85rem;">
+          <li><span style="color: #94a3b8;">مواقع الشركات والأعمال</span></li>
+          <li><span style="color: #94a3b8;">صفحات الهبوط التسويقية</span></li>
+          <li><span style="color: #94a3b8;">مواقع البورتفوليو الشخصي</span></li>
+          <li><span style="color: #94a3b8;">تطبيقات الويب المخصصة</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 style="font-weight: 800; color: white; margin-bottom: 1rem; font-size: 0.95rem;">الدعم الفني</h4>
+        <p style="font-size: 0.85rem; margin-bottom: 0.5rem;">الجزائر</p>
+        <p style="font-size: 0.85rem; margin-bottom: 0.5rem;">contact@webstudio.agency</p>
+        <p style="font-size: 0.85rem; font-weight: 700; color: #34d399;">دعم فوري عبر واتساب</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 استوديو المطور الرقمي. جميع الحقوق محفوظة.</p>
+      <div style="display: flex; gap: 1.5rem;">
+        <span style="cursor: pointer;">سياسة الخصوصية</span>
+        <span style="cursor: pointer;">الشروط والأحكام</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="consultation-modal" class="modal-overlay">
+    <div class="modal-content">
+      <button onclick="closeModal()" class="close-btn">
+        <i data-lucide="x" style="width: 20px; height: 20px;"></i>
+      </button>
+
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <span style="background: #1e1b4b; color: #c7d2fe; font-size: 0.75rem; font-weight: 700; padding: 0.25rem 0.75rem; border-radius: 9999px; border: 1px solid rgba(99,102,241,0.3);">استشارة برمجية</span>
+        <h3 style="font-size: 1.5rem; font-weight: 800; color: white; margin-top: 0.75rem;">طلب تصميم موقع إلكتروني</h3>
+        <p style="color: #94a3b8; font-size: 0.85rem; margin-top: 0.25rem;">سيتم تحويلك مباشرة عبر واتساب لمناقشة فكرة وتفاصيل موقعك.</p>
+      </div>
+
+      <form id="modal-form" onsubmit="handleModalSubmit(event)" style="display: flex; flex-direction: column; gap: 1rem;">
+        <div class="form-group" style="margin-bottom: 0;">
+          <label>الاسم الكريم *</label>
+          <input type="text" id="m-name" required placeholder="محمد العتيبي" class="form-control" />
+        </div>
+
+        <div class="form-group" style="margin-bottom: 0;">
+          <label>رقم الجوال *</label>
+          <input type="tel" id="m-phone" required placeholder="+213 600 000 000" class="form-control" />
+        </div>
+
+        <div class="form-group" style="margin-bottom: 0;">
+          <label>نوع الخدمة المطلوبة</label>
+          <select id="m-service" class="form-control">
+            <option value="صفحة هبوط تسويقية">صفحة هبوط تسويقية (18,000 د.ج)</option>
+            <option value="موقع بورتفوليو / شخصي">موقع بورتفوليو / شخصي (22,000 د.ج)</option>
+            <option value="موقع الشركات والأعمال">موقع الشركات والأعمال (28,000 د.ج)</option>
+            <option value="بوابة الخدمات والحلول المخصصة">بوابة الخدمات والحلول المخصصة (35,000 د.ج)</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; background: linear-gradient(135deg, #059669, #0d9488); margin-top: 0.5rem;">
+          <i data-lucide="send" style="width: 16px; height: 16px;"></i>
+          إرسال الطلب عبر واتساب 💬
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Custom JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
